@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pendalaman HTML</title>
+
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Link ke file CSS eksternal -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
     <header>
-        <h1>Bandung</h1>
+        <div class="jumbotron">
+            <h1>Bandung</h1>
         <p>Bandung adalah ibu kota Provinsi Jawa Barat, Indonesia. Kota ini terletak di dataran tinggi dengan suhu rata-rata 23 °C.</p>
+        </div>
         <nav>
             <ul>
                 <li><a href="#sejarah">Sejarah</a></li>
@@ -22,9 +31,9 @@
     
     <main>
         <div id="content">
-            <article id="sejarah">
+            <article id="sejarah" class="card">
                 <h2>Sejarah</h2>
-            <img src="assets//image/history.jpg" alt="Sejarah Bandung">
+            <img src="assets//image/history.jpg" alt="Sejarah Bandung" class="featured-image">
             <p>
                 Kata Bandung berasal dari kata bendung atau bendungan karena terbendungnya sungai Citarum oleh
                 lava Gunung Tangkuban Parahu yang lalu membentuk telaga. Legenda yang diceritakan oleh
@@ -44,9 +53,9 @@
             </p>
             </article>
             
-            <article id="geografis">
+            <article id="geografis" class="card">
                 <h2>Geografis</h2>
-            <img src="assets//image/geografis.jpg" alt="Geografis Bandung">
+            <img src="assets//image/geografis.jpg" alt="Geografis Bandung" class="featured-image">
             <p>
                 Kota Bandung dikelilingi oleh pegunungan, sehingga bentuk morfologi wilayahnya bagaikan sebuah
                 mangkok raksasa,[9] secara geografis kota ini terletak di tengah-tengah provinsi Jawa Barat,
@@ -63,7 +72,7 @@
             </p>
             </article>
             
-            <article id="wisata">
+            <article id="wisata" class="card">
                 <h2>Wisata</h2>
                 <p>
                     Sejak dibukanya Jalan Tol Cipularang, kota Bandung telah menjadi tujuan utama dalam menikmati
@@ -73,7 +82,7 @@
                 </p>
                 <section>
                     <h3>Farm House Lembang</h3>
-                    <img src="assets/image/farm-house.jpg" alt="Farm House Lembang">
+                    <img src="assets/image/farm-house.jpg" alt="Farm House Lembang" class="featured-image">
                     <h4>Lokasi</h4>
                     <p>
                         Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi
@@ -87,7 +96,7 @@
                 
                 <section>
                     <h3>Observatorium Bosscha</h3>
-                    <img src="assets/image/bosscha.jpg" alt="Observatorium Bosscha">
+                    <img src="assets/image/bosscha.jpg" alt="Observatorium Bosscha" class="featured-image">
                     <p>
                         Memiliki beberapa teleskop, antara lain, Refraktor Ganda Zeiss, Schmidt Bimasakti, Refraktor
                         Bamberg, Cassegrain GOTO, dan Teleskop Surya. Refraktor Ganda Zeiss adalah jenis teleskop
@@ -102,7 +111,7 @@
         </div>
 
         <aside>
-            <article>
+            <article class="profile">
                 <header>
                     <h2>Kota Bandung</h2>
                     <p>Kota Kembang Paris Van java</p>
@@ -114,7 +123,7 @@
                 
                 <section>
                     <h3>Informasi Lainnya</h3>
-                    <table>
+                    <table class="tableInformation">
                         <tr>
                             <th>Negara</th>
                             <td>Indonesia</td>
